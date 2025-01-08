@@ -2,8 +2,14 @@
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
- */
-package ejemplos01;
+ */ 
+/* generar una solución que permita sumar dos numeros a traves de un metodo los 
+numeros deben ser ingresados por teclado en el meteodo main el metodo que genera
+la suma debe verificar que los dos numeros sean positivos para realizar la 
+operacion caso contrario la suma es 0
+*/
+package ejemplos03;
+
 
 import java.util.Scanner;
 
@@ -33,7 +39,12 @@ public class Ejemplo03 {
     
     public static int obtenerSuma(int a, int b){
         int suma;
-        suma = a + b;
+        if (a>0 && b>0){
+            suma= a+b;
+        }else{
+            suma=0;
+        }
+        
         return suma;
         // return a + b;
     }
